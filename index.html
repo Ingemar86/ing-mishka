@@ -4,31 +4,44 @@
 <head>
   <meta charset="utf-8">
   <title>Мишка</title>
+  <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+  <link href="css/outline.css" rel="stylesheet">
 </head>
 
 <body>
   <header class="page-header">
-    <a class="page-header__logo">
-      <img class="page-header__logo-image" src="img/logotype-mobile.svg" alt="Мишка">
-    </a>
-    <nav class="main-nav">
-      <button class="main-nav__toggle" type="button">Открыть меню</button>
-      <div class="main-nav__wrapper">
+    <div class="main-nav__wrapper">
+      <nav class="main-nav">
+        <a class="page-header__logo">
+          <img class="page-header__logo-image" src="img/logotype-mobile.svg" alt="Мишка">
+        </a>
+        <button class="main-nav__toggle" type="button">Открыть меню</button>
         <ul class="main-nav__list site-list">
-          <li class="site-list__item">
-            <a href="catalog.html">Каталог товаров</a>
-          </li>
-          <li class="site-list__item">
-            <a href="order.html">Вязание на заказ</a>
-          </li>
-          <li class="site-list__item">
-            <a href="find.html">Поиск по сайту</a>
-          </li>
-          <li class="site-list__item">
-            <a href="basket.html">Корзина: пока пуста</a>
-          </li>
+          <div class="site-list__nav">
+            <li class="site-list__item">
+              <a href="catalog.html">Каталог товаров</a>
+            </li>
+            <li class="site-list__item">
+              <a href="order.html">Вязание на заказ</a>
+            </li>
+          </div>
+          <div class="site-list__user">
+            <li class="site-list__item">
+              <a href="find.html">Поиск по сайту</a>
+            </li>
+            <li class="site-list__item">
+              <a href="basket.html">Корзина: пока пуста</a>
+            </li>
+          </div>
         </ul>
-      </div>
+      </nav>
+    </div>
+
+    <div class="page-header__background">
+      <img class="background__image" src="img/back.png" alt="Милые штуки">
+    </div>
+    <nav class="user-nav">
       <div class="main-nav__wrapper--user">
         <ul class="main-nav__list user-list">
           <li class="user-list__item">
@@ -50,16 +63,16 @@
         <b class="stats__slogan">Милые штуки ручной работы для дома</b>
       </header>
       <table class="stats__list">
-        <tr>
+        <tr class="stats__list__value">
           <td class="stats__value">Предметы интерьера</td>
           <td class="stats__img">
-            <img class="stats__img--int" src="img/int.png" alt="Предметы интерьера">
+            <img class="stats__img--int" src="img/int.png" alt="">
           </td>
         </tr>
-        <tr>
+        <tr class="stats__list__value">
           <td class="stats__value">Детские ингрушки</td>
           <td class="stats__img">
-            <img class="stats__img--toy" src="img/toy.png" alt="Предметы интерьера">
+            <img class="stats__img--toy" src="img/toy.png" alt="">
           </td>
         </tr>
       </table>
@@ -189,4 +202,5 @@
     </div>
   </footer>
 </body>
+
 </html>
