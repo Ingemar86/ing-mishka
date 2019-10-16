@@ -1,5 +1,6 @@
 div, header, a, nav, section, td, tr{
-    border-width:1;
+    border-width: 0.3px;
     border-color: rgb(190,190,190);
     border-style: solid;
     }
+    
